@@ -44,6 +44,33 @@ public class Ex1P1_EmilianoBonilla {
                 System.out.println("La cadena actualizada es: " + cadenaModificada);
 
             } else if (respuesta == 2) {
+                String cadenaSubstring = "Programacion1";
+                cadenaSubstring.substring(0, 8);
+                String subCadena = cadenaSubstring.substring(0, 3);
+                System.out.println("La subcadena entre la pos 0,3 es " + subCadena);
+                subCadena = cadenaSubstring.substring(4);
+                System.out.println("La subcadena que empieza en la pos 4 hasta el final " + subCadena);
+
+            } else if (respuesta == 3) {
+                System.out.println("Elaboraremos la figura.");
+                System.out.println("Ingrese un numero entero impar: ");
+                int num = entrada.nextInt();
+
+                int c = num;
+
+                for (int fila = 1; fila <= c; fila++) {
+                    for (int espacio = c; espacio > fila; espacio--) {
+                        System.out.print(" ");
+
+                    }
+                    for (int columna = 1; columna <= (2 * fila - 1); columna++) {
+                        System.out.print("*");
+
+                    }
+                    System.out.println("");
+                }
+
+            } else if (respuesta == 4) {
                 System.out.println("Ingrese la primera cadena:");
                 String cadena1 = entrada.nextLine();
 
@@ -65,38 +92,6 @@ public class Ex1P1_EmilianoBonilla {
                     System.out.println("Las cadenas son distintas");
                 }
 
-            } else if (respuesta == 3) {
-                System.out.println("Elaboraremos la figura.");
-                System.out.println("Ingrese un numero entero impar: ");
-                int num = entrada.nextInt();
-
-                int c = num;
-
-                for (int fila = 1; fila <= c; fila++) {
-                    for (int espacio = c; espacio > fila; espacio--) {
-                        System.out.print(" ");
-
-                    }
-                    for (int columna = 1; columna <= (2 * fila - 1); columna++) {
-                        System.out.print("*");
-
-                    }
-                    System.out.println("");
-                }
-
-            }else if (respuesta ==4) {
-                int cadena1 =0;
-                int cadena2 = 0;
-                System.out.println("Comenzaremos el anagrama");
-                System.out.println("Ingrese Su primera cadena: ");
-                cadena1 = entrada.nextInt();
-                
-                System.out.println("Ingrese su segunda cadena: ");
-                cadena2= entrada.nextInt();
-                
-                
-                
-                
             }
 
         }
