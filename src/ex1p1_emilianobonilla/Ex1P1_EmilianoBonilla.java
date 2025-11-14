@@ -78,12 +78,15 @@ public class Ex1P1_EmilianoBonilla {
                 String cadena2 = entrada.nextLine();
 
                 boolean iguales = cadena1.equals(cadena2);
-
+ 
+                
                 if (cadena1.equals(cadena2)) {
                     System.out.println("Las cadenas son iguales");
+                    
+                    
 
                 } else {
-                    System.out.println("Las cadenas son distintas");
+                    System.out.println("Las cadenas no son iguales");
                 }
                 if (cadena1.equalsIgnoreCase(cadena2)) {
                     System.out.println("Las cadenas son iguales");
